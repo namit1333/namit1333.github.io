@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Latency Lab, explained in plain language: a speed test for software that counts the waiting most measuring tools quietly hide.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Latency Lab, explained — Namith Tatipigari">
+  <meta property="og:description" content="A speed test for software that counts the waits most tools quietly hide. No technical background needed.">
+  <link rel="canonical" href="https://namit1333.github.io/projects/latency-lab.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+  <title>Latency Lab, explained — Namith Tatipigari</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../index.html" aria-label="Namith Tatipigari, home"><span class="monogram" aria-hidden="true">nt.</span><span>Namith Tatipigari</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="nav-github" href="https://github.com/namit1333">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main" class="story">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html#work">All projects</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Latency Lab</span>
+    </nav>
+
+    <header class="story-hero">
+      <p class="eyebrow">Project · Developer tools</p>
+      <h1>Latency Lab</h1>
+      <p class="story-lede">A stopwatch for software that counts the waits most measuring tools quietly hide.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/latency-lab">See the code on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">← Back to all projects</a>
+      </div>
+    </header>
+
+    <section class="story-section" aria-labelledby="latency-problem">
+      <h2 id="latency-problem">The problem, in plain words</h2>
+      <p>Speed checks usually work like this: send a request, wait for the answer, write down how long it took. It sounds fair. It isn’t.</p>
+      <p>When a busy service gets overwhelmed, requests pile up in a queue. The stopwatch only starts once a request finally gets sent — so the ones stuck waiting in line are never timed at all. The report comes back looking fine while real people stare at a spinner.</p>
+      <p>That blind spot has a technical name, but you don’t need the name to see the problem: a tool that times only what it managed to send will always report a better experience than anyone actually had.</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="latency-how">
+      <h2 id="latency-how">What it does</h2>
+      <ol class="story-list">
+        <li><strong>It plans the crowd.</strong>Requests arrive on a schedule, the way real visitors do — steady or randomly spread out, in phases you choose.</li>
+        <li><strong>It starts the clock when the request should have started.</strong>Waiting in the queue counts as waiting, because that is what a person experiences.</li>
+        <li><strong>It remembers what it had to drop.</strong>If a request couldn’t be sent on time, it’s recorded as dropped and given the delay it would have suffered — never quietly thrown away.</li>
+        <li><strong>It shows both numbers, side by side.</strong>The ordinary measurement next to the honest one. The distance between the two columns is exactly the stall the ordinary number can’t express.</li>
+      </ol>
+      <div class="story-callout">
+        <p class="eyebrow">In everyday terms</p>
+        <p>Picture a restaurant timing only the tables that got seated. Latency Lab times every table — including the ones still waiting at the door.</p>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="latency-why">
+      <h2 id="latency-why">Why it matters</h2>
+      <p>Every website and online service has busy moments: a product launch, a ticket sale, an ordinary Monday morning. Those are exactly the moments ordinary speed checks flatter, and exactly the moments when slow means lost patience, lost sales, and lost trust.</p>
+      <p><strong>Who it’s for:</strong> anyone responsible for a website or service who wants an honest answer to “how slow did it really get?” — and wants that answer readable by a person, not just a machine.</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="latency-status">
+      <h2 id="latency-status">Where it stands</h2>
+      <p>Latency Lab works today and runs from the command line. It was built with engineers in mind, but its reports are designed to be readable by anyone who needs to know how a service behaved under pressure.</p>
+      <div class="story-facts">
+        <div class="story-fact"><p class="eyebrow">What it is</p><p>A load-testing tool</p></div>
+        <div class="story-fact"><p class="eyebrow">The idea</p><p>Measure the wait people feel</p></div>
+        <div class="story-fact"><p class="eyebrow">What you get</p><p>Two honest columns</p></div>
+        <div class="story-fact"><p class="eyebrow">The report</p><p>Readable and shareable</p></div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="latency-notes">
+      <h2 id="latency-notes">Good to know</h2>
+      <ul class="story-checks">
+        <li>It’s a measuring tool: it never changes the service it tests.</li>
+        <li>The ordinary and corrected numbers are always shown together, so you can see the difference yourself.</li>
+        <li>Runs are repeatable: the same settings produce the same schedule, so results can be checked.</li>
+      </ul>
+    </section>
+
+    <section class="story-end">
+      <div>
+        <h2>Want to look under the hood?</h2>
+        <p>The full source code is public on GitHub. No technical background needed to understand the idea — curiosity is enough.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/latency-lab">See the code on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">All projects →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>© <span id="year">2026</span> Namith Tatipigari</span><span>Made with intention. Built for the web.</span><a href="#">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

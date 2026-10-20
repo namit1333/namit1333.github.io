@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Forewarned, explained in plain language: an early-warning system that tells you what in your software is about to break — and prepares the repair before anything does.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Forewarned, explained — Namith Tatipigari">
+  <meta property="og:description" content="It spots what in your software is about to break, and prepares the repair before anything does. No technical background needed.">
+  <link rel="canonical" href="https://namit1333.github.io/projects/forewarned.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+  <title>Forewarned, explained — Namith Tatipigari</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../index.html" aria-label="Namith Tatipigari, home"><span class="monogram" aria-hidden="true">nt.</span><span>Namith Tatipigari</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="nav-github" href="https://github.com/namit1333">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main" class="story">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html#work">All projects</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Forewarned</span>
+    </nav>
+
+    <header class="story-hero">
+      <p class="eyebrow">Project · Agent automation</p>
+      <h1>Forewarned</h1>
+      <p class="story-lede">It spots what in your software is about to break — and prepares the repair before anything does.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/C0MPILE-HACK----ForeWarned">See the code on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">← Back to all projects</a>
+      </div>
+    </header>
+
+    <section class="story-section" aria-labelledby="forewarned-problem">
+      <h2 id="forewarned-problem">The problem, in plain words</h2>
+      <p>Almost no app works alone. A weather app doesn’t measure the weather — it asks another service for it. An online shop doesn’t draw its own maps. It borrows somebody else’s.</p>
+      <p>These borrowed pieces change constantly. The company behind one might change the shape of the answer it sends back, rename something, or switch part of it off. Most teams find out the hard way: something just stops working one morning, and someone has to work out why while customers are already complaining.</p>
+      <p>The usual safety net only tells you that a new version exists. It doesn’t tell you whether that new version is going to break anything — or what to do about it.</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="forewarned-how">
+      <h2 id="forewarned-how">What it does</h2>
+      <ol class="story-list">
+        <li><strong>It reads your project.</strong>Forewarned makes a clear list of every outside service your software talks to — the parts you borrow rather than own.</li>
+        <li><strong>It watches for changes.</strong>When one of those services announces an update, a rename, or a shutdown, Forewarned hears about it.</li>
+        <li><strong>It shows you the blast radius.</strong>Instead of a vague warning, you see exactly which parts of your app feel that change — the specific spots in plain sight, not a puzzle.</li>
+        <li><strong>It prepares the fix.</strong>A helper drafts the repair and hands it to you as a proposal, together with what was checked. Nothing changes until you say yes.</li>
+      </ol>
+      <div class="story-callout">
+        <p class="eyebrow">In everyday terms</p>
+        <p>It’s like getting a home inspection before the storm instead of after the roof leaks. You still decide what to repair — you just get to decide early, calmly, and with the whole list in front of you.</p>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="forewarned-why">
+      <h2 id="forewarned-why">Why it matters</h2>
+      <p>Surprises are the expensive part of software. A change that arrives without warning costs an afternoon of panic, a broken feature, and sometimes a customer. The same change, announced early with a prepared repair, is a small and boring task.</p>
+      <p><strong>Who it’s for:</strong> anyone who maintains software that leans on outside services — small teams especially, where one surprise can eat a whole week.</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="forewarned-status">
+      <h2 id="forewarned-status">Where it stands</h2>
+      <p>Forewarned was built as a <strong>hackathon prototype</strong> — a working sketch made under time pressure, not a finished product. It works end to end on demonstration projects, and it shows the idea clearly: warn early, explain the impact, prepare the repair.</p>
+      <div class="story-facts">
+        <div class="story-fact"><p class="eyebrow">What it is</p><p>A working prototype</p></div>
+        <div class="story-fact"><p class="eyebrow">The idea</p><p>Warn first, fix first</p></div>
+        <div class="story-fact"><p class="eyebrow">Who it’s for</p><p>People maintaining software</p></div>
+        <div class="story-fact"><p class="eyebrow">Where it lives</p><p>Open source on GitHub</p></div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="forewarned-notes">
+      <h2 id="forewarned-notes">Good to know</h2>
+      <ul class="story-checks">
+        <li>It never edits your code on its own — every repair arrives as a proposal for a person to review.</li>
+        <li>It only proposes changes to code you own.</li>
+        <li>It’s a prototype: expect rough edges, and room to grow.</li>
+      </ul>
+    </section>
+
+    <section class="story-end">
+      <div>
+        <h2>Want to look under the hood?</h2>
+        <p>The full source code is public on GitHub. No technical background needed to understand the idea — curiosity is enough.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/C0MPILE-HACK----ForeWarned">See the code on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">All projects →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>© <span id="year">2026</span> Namith Tatipigari</span><span>Made with intention. Built for the web.</span><a href="#">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

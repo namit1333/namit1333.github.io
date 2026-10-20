@@ -17,7 +17,8 @@ Open http://127.0.0.1:8040.
 ## Update
 
 - `index.html`: profile copy, public project descriptions, and links.
-- `styles.css`: responsive layout, typography, and illustrations.
+- `projects/*.html`: one plain-language explanation page per project (no technical background required). Each project card links here; the GitHub source is a secondary link on the card and on the page.
+- `styles.css`: responsive layout, typography, illustrations, and project story pages.
 - `script.js`: progressively enhanced project filters and copyright year.
 - `favicon.svg`: local site icon.
 

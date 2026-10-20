@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="A California energy research project explained in plain language: snowpack predicts hydropower well, but did not improve price forecasts.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Snowpack → Hydro → Prices — Namith Tatipigari">
+  <meta property="og:description" content="Can winter snow predict summer hydropower — and electricity prices? One link held up. The other didn't.">
+  <link rel="canonical" href="https://namit1333.github.io/projects/snowpack-hydro.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+  <title>Snowpack → Hydro → Prices — Namith Tatipigari</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../index.html" aria-label="Namith Tatipigari, home"><span class="monogram" aria-hidden="true">nt.</span><span>Namith Tatipigari</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="nav-github" href="https://github.com/namit1333">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main" class="story">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html#work">All projects</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Snowpack → Hydro → Prices</span>
+    </nav>
+
+    <header class="story-hero">
+      <p class="eyebrow">Project · Quantitative research</p>
+      <h1>Snowpack → Hydro → Prices</h1>
+      <p class="story-lede">Can the winter snowpack predict summer hydropower — and what electricity costs? One link held up. The other didn’t.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/snowpack-hydro-prices">Read the full study <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">← Back to all projects</a>
+      </div>
+    </header>
+
+    <section class="story-section" aria-labelledby="snowpack-question">
+      <h2 id="snowpack-question">The question</h2>
+      <p>California stores its water as snow. When it melts in spring and summer, it spins turbines and makes electricity. So if we know how much snow fell this winter, can we predict how much power the state will make — and what that power will cost?</p>
+      <p>It’s a chain of two links: snow into power, and power into price. We tested each link on its own, and we wrote down what we expected before looking.</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="snowpack-how">
+      <h2 id="snowpack-how">What we did</h2>
+      <ol class="story-list">
+        <li><strong>46 years of snow measurements.</strong>Official state snow surveys, going back to 1980.</li>
+        <li><strong>Two independent power sources.</strong>Summer hydropower figures from two separate datasets, so a mistake in one could be caught by the other.</li>
+        <li><strong>Six years of prices.</strong>The public price record is thinner than we’d like — and we say so everywhere in the study.</li>
+        <li><strong>The same battery of doubt.</strong>Shuffle the years thousands of times and re-measure. Re-draw the sample. Remove one year at a time. Try different settings. Each check asks: could this be luck?</li>
+      </ol>
+    </section>
+
+    <section class="story-section" aria-labelledby="snowpack-findings">
+      <h2 id="snowpack-findings">What we found</h2>
+      <div class="story-findings">
+        <div class="finding">
+          <p class="eyebrow is-yes">Supported</p>
+          <h3>Snowpack → summer hydropower</h3>
+          <p>Every extra percentage point of normal snowpack comes with roughly 25 gigawatt-hours more summer hydropower. A winter at ten points above normal means about 250 gigawatt-hours extra — around 3% of a typical summer. Both independent sources agreed, and every reliability check held.</p>
+        </div>
+        <div class="finding">
+          <p class="eyebrow is-no">Not proven</p>
+          <h3>Hydropower → electricity prices</h3>
+          <p>Snowpack did not improve price forecasts on data the models had never seen. A deliberately boring baseline — “next year will look like this year” — beat every snowpack-based model we built.</p>
+        </div>
+      </div>
+      <div class="story-callout">
+        <p class="eyebrow">Why the failure is in the report</p>
+        <p>We kept the failed prediction on the page. Deleting it would have made the project look smarter and made the research worse.</p>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="snowpack-why">
+      <h2 id="snowpack-why">Why it matters</h2>
+      <p>A real physical relationship — snow becomes water, water becomes power — does not automatically become a trading signal. Between the reservoir and the bill sit gas prices, demand, heat waves, and grid decisions.</p>
+      <p><strong>Who it’s for:</strong> anyone interested in energy, water, or the market — and anyone curious about how honest research handles a hypothesis that half-worked.</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="snowpack-notes">
+      <h2 id="snowpack-notes">Good to know</h2>
+      <ul class="story-checks">
+        <li>This studies association — patterns that travel together — not proof of cause and effect.</li>
+        <li>Only six years of price data were available; the study estimates about twelve would be needed for a fair answer. “Not proven” is not the same as “proven impossible”.</li>
+        <li>It is research, not financial advice.</li>
+      </ul>
+    </section>
+
+    <section class="story-end">
+      <div>
+        <h2>Want to look under the hood?</h2>
+        <p>The full study — methods, charts, and every check — is public on GitHub. No technical background needed to follow the story.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/snowpack-hydro-prices">Read the full study <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">All projects →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>© <span id="year">2026</span> Namith Tatipigari</span><span>Made with intention. Built for the web.</span><a href="#">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

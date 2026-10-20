@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Repo Forensics, explained in plain language: it reads a software project's diary and points to where the trouble is most likely to come from.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Repo Forensics, explained — Namith Tatipigari">
+  <meta property="og:description" content="It reads a software project's diary and points to where the trouble is most likely to come from. No technical background needed.">
+  <link rel="canonical" href="https://namit1333.github.io/projects/repo-forensics.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+  <title>Repo Forensics, explained — Namith Tatipigari</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../index.html" aria-label="Namith Tatipigari, home"><span class="monogram" aria-hidden="true">nt.</span><span>Namith Tatipigari</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="nav-github" href="https://github.com/namit1333">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main" class="story">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html#work">All projects</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Repo Forensics</span>
+    </nav>
+
+    <header class="story-hero">
+      <p class="eyebrow">Project · Developer tools</p>
+      <h1>Repo Forensics</h1>
+      <p class="story-lede">It reads a software project’s diary and points to where the trouble is most likely to come from.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/repo-forensics">See the code on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">← Back to all projects</a>
+      </div>
+    </header>
+
+    <section class="story-section" aria-labelledby="forensics-problem">
+      <h2 id="forensics-problem">The problem, in plain words</h2>
+      <p>Every software project keeps a perfect diary. Every change ever made is recorded: what was touched, when, and by whom. Almost nobody reads it.</p>
+      <p>Yet that diary answers the questions teams ask constantly. Which files keep breaking? Which parts does only one person understand? What always has to be changed together? Today those questions get answered by gut feeling and hallway conversations. They can be answered by evidence.</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="forensics-how">
+      <h2 id="forensics-how">What it looks at</h2>
+      <ol class="story-list">
+        <li><strong>The hotspots.</strong>Files that are <em>still</em> changing. A file that churned three years ago isn’t a problem; a file that keeps changing this month is where maintenance time actually goes.</li>
+        <li><strong>The one-person risks.</strong>Places where almost all the knowledge sits with a single person. If they’re on holiday — or gone — work stops. In the trade this is called the “bus factor”: how many people would have to disappear before the project stalls.</li>
+        <li><strong>The secret couples.</strong>Pairs of files that always change together. Usually it means one thing has been split in two, and they’ll keep causing double work until someone reunites them.</li>
+      </ol>
+      <div class="story-callout">
+        <p class="eyebrow">In everyday terms</p>
+        <p>It’s like reading a building’s maintenance records before you buy it. The leaks leave a pattern — if you know how to read it.</p>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="forensics-why">
+      <h2 id="forensics-why">Why it matters</h2>
+      <p>Maintenance is where software time quietly goes. Knowing which files are hotspots, which knowledge is fragile, and which pieces are secretly joined helps a team spend its attention where it matters — before something breaks, not after.</p>
+      <p><strong>Who it’s for:</strong> team leads planning work, people taking over a project they didn’t write, and anyone who’s ever asked “where should we be careful?”</p>
+    </section>
+
+    <section class="story-section" aria-labelledby="forensics-output">
+      <h2 id="forensics-output">What you get</h2>
+      <p>Two reports of the same findings: one written for people — clean enough to read in a meeting — and one written for other tools to consume. The maths behind it is deliberately simple, and every number is checked against results worked out by hand.</p>
+      <div class="story-facts">
+        <div class="story-fact"><p class="eyebrow">What it is</p><p>A project history reader</p></div>
+        <div class="story-fact"><p class="eyebrow">The idea</p><p>Evidence, not hunches</p></div>
+        <div class="story-fact"><p class="eyebrow">What you get</p><p>A report people can read</p></div>
+        <div class="story-fact"><p class="eyebrow">What it needs</p><p>Only the project’s history</p></div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="forensics-notes">
+      <h2 id="forensics-notes">Good to know</h2>
+      <ul class="story-checks">
+        <li>It only reads history — it never changes the project.</li>
+        <li>Recent activity counts more than old activity, on purpose.</li>
+        <li>It measures how much was changed, not just how often a file was touched.</li>
+      </ul>
+    </section>
+
+    <section class="story-end">
+      <div>
+        <h2>Want to look under the hood?</h2>
+        <p>The full source code is public on GitHub. No technical background needed to understand the idea — curiosity is enough.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-dark" href="https://github.com/namit1333/repo-forensics">See the code on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="../index.html#work">All projects →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>© <span id="year">2026</span> Namith Tatipigari</span><span>Made with intention. Built for the web.</span><a href="#">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
