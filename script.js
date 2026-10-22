@@ -25,5 +25,20 @@ if (filters && buttons.length && projects.length && status) {
   }
 }
 
+const copyButton = document.querySelector('#copy-email');
+if (copyButton) {
+  copyButton.addEventListener('click', async () => {
+    const email = copyButton.dataset.email || '';
+    try {
+      await navigator.clipboard.writeText(email);
+      copyButton.textContent = 'Copied ✓';
+    } catch {
+      window.location.href = `mailto:${email}`;
+      return;
+    }
+    setTimeout(() => { copyButton.textContent = 'Copy email'; }, 2000);
+  });
+}
+
 const year = document.querySelector('#year');
 if (year) year.textContent = String(new Date().getFullYear());
